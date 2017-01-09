@@ -22,3 +22,16 @@ function sum2(){
 	document.test.kommentar2.value=resultat;
 }
 
+function init(){
+	// Get a reference to our touch-sensitive element
+	var touchzone = document.getElementById("Touchzone");
+	// Add an event handler for the touchstart event
+	touchzone.addEventListener("touchstart", touchHandler, false);
+}
+
+function touchHandler(event){
+	//write the koordinater of the touch to the div (id = koordinater)
+	// pageX   horizontal coordinate of point relativ to page, including scroll offset
+ 	// pageY   vertical coordinate of point relativ to page , including scroll offset
+	document.getElementById("koordinater").innerHTML = " x: " + event.touches(0).pageX + ", y: " + event.touches(0).pageY;
+}

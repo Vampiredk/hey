@@ -2,13 +2,18 @@
 
 	<head>
 		<title> Kasseberegning </title>
+		<meta http-equiv="Content-Type" content="text/html; charsset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<script type="text/javascript" src="JS Opgave 1.5C.js"></script>
-		<script type="text/javascript" src="cordova.js"></script>
+		
 	</head>
 	
-		<body>
+		<body onload = "init()">
+		
 			<h1> Kasseberegning </h1>
-			
+			<div id="koordinater"> </div>
+			<div id="touchzone">start touchområde<br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>slut</div>
 			<img src="Kasse.jpg" style="width:200px;height:200px;">
 			
 			<form id="form" name="test";>
@@ -20,5 +25,4 @@
 			<button type="button" onclick="sum2()"> Beregn volume </button>
 			<input type="text" name="kommentar2" /><br/>
 			
-	
 		</body>

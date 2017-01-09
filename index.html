@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 	<head>
-		<title> Kasseberegning </title>
+		<title> Tegne program </title>
 		<meta http-equiv="Content-Type" content="text/html; charsset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<script type="text/javascript" src="JS Opgave 1.5C.js"></script>
@@ -11,21 +11,11 @@
 	
 		<body onload = "init()">
 		
-			<h1> Kasseberegning </h1>
-			<div id="koordinater"> </div>
-			<div id="touchzone">start touchområde<br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>slut</div>
-			<img src="Kasse.jpg" style="width:200px;height:200px;">
+			<h1> Tegne Program </h1>
+				<canvas id="mycanvas" width="350" height="400">
+					Canvas element not supported.
+				</canvas>
 			
-			<img src="Kasse.JPG" style="width:200px;height:200px;">
-			<form id="form" name="test";>
-			Intast højde <input type="text" name="tal_1" /><br/>
-			Intast bredde <input type="text" name="tal_2" /><br/>
-			Intast længde <input type="text" name="tal_3" /><br/>
-			<button type="button" onclick="sum1()"> Beregn overfladeareal</button>
-			<input type="text" name="kommentar1" /><br/>
-			<button type="button" onclick="sum2()"> Beregn volume </button>
-			<input type="text" name="kommentar2" /><br/>
 			
 		</body>
 	

@@ -11,7 +11,7 @@ function init(){
 	touchzone.addEventListener("touchend", end, false);
 	ctx = touchzone.getContext("2d");
 	mycanvas.width = mycanvas.width;
-	ctx.fillStyle="yellow";
+	ctx.fillStyle="blue";
 	ctx.fillRect (0,0, mycanvas. width, mycanvas.height);
 }
 
